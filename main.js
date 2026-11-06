@@ -15,11 +15,9 @@ const logs = [
     '[ПЕРСОНАЖ №1] пытался что-то сказать, но вдруг, неожиданно [ПЕРСОНАЖ №2] со скуки, разбил бровь сопернику.'
 ];
 
-// Використовуємо метод find() з масиву pokemons
 const pikachuData = pokemons.find(item => item.name === 'Pikachu');
 const charmanderData = pokemons.find(item => item.name === 'Charmander');
 
-// Створюємо екземпляри класу за допомогою оператора розгортання (...)
 const player1 = new Pokemon({
     ...pikachuData,
     selectors: 'player-1'
@@ -50,7 +48,6 @@ function generateLog(first, second, damage) {
     $logs.insertBefore($p, $logs.children[0]);
 }
 
-// Динамічне створення кнопок атак на основі масиву attacks
 player1.attacks.forEach(item => {
     const $btn = document.createElement('button');
     $btn.classList.add('button');
@@ -69,7 +66,6 @@ player1.attacks.forEach(item => {
             $btn.disabled = true;
         }
 
-        // Атака гравця
         const damage = random(item.maxDamage, item.minDamage);
         player2.changeHP(damage, () => {
             generateLog(player1, player2, damage);
@@ -81,7 +77,6 @@ player1.attacks.forEach(item => {
             return;
         }
 
-        // Зворотна атака супротивника
         const enemyAttack = player2.attacks[random(player2.attacks.length - 1)];
         const enemyDamage = random(enemyAttack.maxDamage, enemyAttack.minDamage);
         
