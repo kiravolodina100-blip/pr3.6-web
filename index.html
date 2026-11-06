@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Fight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+    <header>
+        <img class="logo" title="Reset Game" src="./assets/Pokemon_logo.png" alt="Pokemon">
+    </header>
+    <div class="playground">
+        <div class="pokemon character" id="player-1">
+            <span class="lvl">Lv. 1</span>
+            <img src="" class="sprite" id="img-player-1">
+            <div class="details">
+                <h2 class="name" id="name-character">Pikachu</h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-player-1" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-player-1">274 / 274</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <!-- Кнопки генеруються автоматично JS -->
+        </div>
+
+        <div class="pokemon enemy" id="player-2">
+            <span class="lvl">Lv. 1</span>
+            <img src="" class="sprite" id="img-player-2">
+            <div class="details">
+                <h2 class="name" id="name-enemy">Charmander</h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-player-2" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-player-2">282 / 282</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="logs"></div>
+
+</div>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
