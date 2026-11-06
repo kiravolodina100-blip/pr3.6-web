@@ -3,7 +3,7 @@ export const pokemons = [
         name: 'Pikachu',
         type: 'electric',
         hp: 274,
-        img: 'http://sify4321.000webhostapp.com/pikachu.png',
+        img: 'https://cdn-icons-png.flaticon.com/512/188/188987.png',
         attacks: [
             {
                 name: "thunder jolt",
@@ -32,7 +32,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'http://sify4321.000webhostapp.com/charmander.png',
+        img: 'https://cdn-icons-png.flaticon.com/512/188/188990.png',
         name: 'Charmander',
         type: 'fire',
         hp: 282,
@@ -64,7 +64,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'http://sify4321.000webhostapp.com/bulbasaur.png',
+       img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
         name: 'Bulbasaur',
         type: 'fire',
         hp: 294,
@@ -96,7 +96,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'http://sify4321.000webhostapp.com/squirtle.png',
+        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
         name: 'Squirtle',
         type: 'water',
         hp: 292,
@@ -128,7 +128,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'http://sify4321.000webhostapp.com/pidgey.png',
+        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
         name: 'Pidgey',
         type: 'air',
         hp: 284,
@@ -160,7 +160,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'http://sify4321.000webhostapp.com/mew.png',
+        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png',
         name: 'Mew',
         type: 'air',
         hp: 404,
