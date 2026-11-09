@@ -15,16 +15,20 @@ const logs = [
     '[ПЕРСОНАЖ №1] пытался что-то сказать, но вдруг, неожиданно [ПЕРСОНАЖ №2] со скуки, разбил бровь сопернику.'
 ];
 
-const pikachuData = pokemons.find(item => item.name === 'Pikachu');
-const charmanderData = pokemons.find(item => item.name === 'Charmander');
+const randomIndex1 = random(pokemons.length - 1);
+let randomIndex2 = random(pokemons.length - 1);
+
+while (randomIndex2 === randomIndex1) {
+    randomIndex2 = random(pokemons.length - 1);
+}
 
 const player1 = new Pokemon({
-    ...pikachuData,
+    ...pokemons[randomIndex1],
     selectors: 'player-1'
 });
 
 const player2 = new Pokemon({
-    ...charmanderData,
+    ...pokemons[randomIndex2],
     selectors: 'player-2'
 });
 
