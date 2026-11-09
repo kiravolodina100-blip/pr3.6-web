@@ -64,7 +64,7 @@ export const pokemons = [
         ]
     },
     {
-       img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
+       img: 'https://share.google/7vn9uhXlyZAOAvtfl',
         name: 'Bulbasaur',
         type: 'fire',
         hp: 294,
@@ -96,7 +96,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png',
+        img: 'https://www.pngarts.com/files/3/Squirtle-PNG-Transparent-Image.png',
         name: 'Squirtle',
         type: 'water',
         hp: 292,
