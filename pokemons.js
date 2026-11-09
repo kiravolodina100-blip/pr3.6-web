@@ -64,7 +64,7 @@ export const pokemons = [
         ]
     },
     {
-       img: 'https://share.google/7vn9uhXlyZAOAvtfl',
+       img: 'https://cdn-icons-png.flaticon.com/512/188/188989.png',
         name: 'Bulbasaur',
         type: 'fire',
         hp: 294,
@@ -96,7 +96,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'https://www.pngarts.com/files/3/Squirtle-PNG-Transparent-Image.png',
+        img: 'https://cdn-icons-png.flaticon.com/512/188/188993.png',
         name: 'Squirtle',
         type: 'water',
         hp: 292,
@@ -128,7 +128,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png',
+        img: 'https://cdn-icons-png.flaticon.com/512/188/188999.png',
         name: 'Pidgey',
         type: 'air',
         hp: 284,
@@ -160,7 +160,7 @@ export const pokemons = [
         ]
     },
     {
-        img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png',
+        img: 'https://cdn-icons-png.flaticon.com/512/188/188988.png',
         name: 'Mew',
         type: 'air',
         hp: 404,
