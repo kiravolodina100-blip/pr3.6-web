@@ -15,16 +15,16 @@ const logs = [
     '[ПЕРСОНАЖ №1] пытался что-то сказать, но вдруг, неожиданно [ПЕРСОНАЖ №2] со скуки, разбил бровь сопернику.'
 ];
 
-const randomIndex1 = random(pokemons.length - 1);
-const randomIndex2 = random(pokemons.length - 1);
+const pikachuData = pokemons.find(item => item.name === 'Pikachu');
+const charmanderData = pokemons.find(item => item.name === 'Charmander');
 
 const player1 = new Pokemon({
-    ...pokemons[randomIndex1],
+    ...pikachuData,
     selectors: 'player-1'
 });
 
 const player2 = new Pokemon({
-    ...pokemons[randomIndex2 === randomIndex1 ? (randomIndex1 + 1) % pokemons.length : randomIndex2],
+    ...charmanderData,
     selectors: 'player-2'
 });
 
@@ -46,6 +46,11 @@ function generateLog(first, second, damage) {
     
     const $logs = document.getElementById('logs');
     $logs.insertBefore($p, $logs.children[0]);
+}
+
+function disableAllButtons() {
+    const buttons = document.querySelectorAll('.control .button');
+    buttons.forEach(btn => btn.disabled = true);
 }
 
 player1.attacks.forEach(item => {
@@ -91,12 +96,3 @@ player1.attacks.forEach(item => {
         }
     });
 });
-
-function disableAllButtons() {
-    const buttons = document.querySelectorAll('.control .button');
-    buttons.forEach(btn => btn.disabled = true);
-}
-function disableAllButtons() {
-    const buttons = document.querySelectorAll('.control .button');
-    buttons.forEach(btn => btn.disabled = true);
-}
